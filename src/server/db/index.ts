@@ -19,6 +19,17 @@ export const Query = <T = any>(query: string, values?: any) => {
     });
 };
 
+// export const tags = async(blogid: string | number) =>{
+//     return new Promise((resolve, reject) => {
+//         connection.query('call spGetTag(?)', [blogid], (err, results) => {
+//             if (err) {
+//                 return reject (err)
+//             }
+//             resolve (results)
+//         })
+//     })
+// }
+
 import blogs from './queries/blogs';
 export default {
     blogs
